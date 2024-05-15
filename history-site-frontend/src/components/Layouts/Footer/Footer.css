@@ -1,0 +1,60 @@
+.footer-container {
+  background-color: #023E73; /* Màu nền xanh biển đậm */
+  color: #fff; /* Màu chữ trắng */
+  padding: 40px; /* Khoảng cách nội dung từ mép của footer */
+  display: flex; /* Hiển thị các thành phần theo kiểu flex */
+}
+
+.footer-column {
+  flex: 1; /* Cột co giãn */
+  display: flex; /* Hiển thị các thành phần bên trong theo kiểu flex */
+  flex-direction: column; /* Xếp các thành phần bên trong theo chiều dọc */
+}
+
+.footer-address {
+  margin-bottom: 10px; /* Khoảng cách dưới của địa chỉ */
+}
+
+.footer-menu {
+  margin-bottom: 20px; /* Khoảng cách dưới của menu */
+}
+
+.footer-row {
+  display: flex; /* Hiển thị các thành phần trong hàng theo kiểu flex */
+  margin-bottom: 20px; /* Khoảng cách dưới của hàng */
+}
+
+.follow-us-column {
+  flex-grow: 0; /* Không co giãn */
+  flex-shrink: 0; /* Không co thu nhỏ */
+  flex-basis: 300px; /* Độ rộng cố định */
+  margin-right: 20px; /* Khoảng cách bên phải */
+}
+
+.follow-us-title {
+  margin-bottom: 10px; /* Khoảng cách dưới của tiêu đề */
+}
+
+.social-icons {
+  display: flex; /* Hiển thị các biểu tượng mạng xã hội theo hàng ngang */
+}
+
+.social-icons svg {
+  margin-right: 10px; /* Khoảng cách giữa các biểu tượng */
+}
+
+.map-column {
+  flex: 1; /* Cột co giãn */
+}
+
+.contact-button {
+  background-color: transparent; /* Nút liên hệ có nền trong suốt */
+  border: 2px solid #fff; /* Viền nút liên hệ */
+  color: #fff; /* Màu chữ của nút liên hệ */
+  margin-bottom: 20px; /* Khoảng cách dưới của nút liên hệ */
+}
+
+iframe {
+  width: 100%; /* Bản đồ có chiều rộng 100% */
+  height: 300px; /* Chiều cao của bản đồ */
+}
