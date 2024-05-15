@@ -1,0 +1,32 @@
+.header-container {
+    background-color: #023e73; /* Màu nền xanh đậm */
+    padding: 20px; /* Khoảng cách nội dung từ mép của header */
+  }
+  
+  .h_logo_image {
+    max-width: 200px; /* Chiều rộng tối đa của hình ảnh logo */
+    display: block; /* Hiển thị hình ảnh logo là một khối riêng biệt */
+    margin: 0 auto 20px; /* Canh giữa hình ảnh logo và margin dưới */
+  }
+  
+  .ant-menu-horizontal {
+    background-color: #023e73; /* Màu nền xanh đậm */
+    border-bottom: none; /* Loại bỏ viền dưới của menu */
+  }
+  
+  .ant-menu-horizontal .ant-menu-item {
+    margin: 0 10px; /* Khoảng cách giữa các mục menu */
+  }
+  
+  .ant-menu-horizontal .ant-menu-item a {
+    color: #fff; /* Màu chữ của các mục menu là màu trắng */
+  }
+  
+  .ant-menu-horizontal .ant-menu-item a:hover {
+    color: #ffc107; /* Màu chữ khi hover trên các mục menu */
+  }
+  
+  .ant-menu-horizontal .ant-menu-item-selected a {
+    color: #ffc107; /* Màu chữ của mục menu được chọn */
+  }
+  
