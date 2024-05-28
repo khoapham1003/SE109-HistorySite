@@ -1,64 +1,54 @@
 import React from "react";
 import { Button, Menu } from "antd";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-import "./Footer.css"; // Import CSS file for custom styling
+import "./Footer.css";
 
 const items = [
-  {
-    label: "TRANG CHỦ",
-  },
-  {
-    label: "GIỚI THIỆU",
-  },
-  {
-    label: "DI TÍCH",
-  },
-  {
-    label: "TRƯNG BÀY",
-  },
-  {
-    label: "HOẠT ĐỘNG GIÁO DỤC",
-  },
-  {
-    label: "CÁC DỊCH VỤ",
-  },
+  { label: "TRANG CHỦ" },
+  { label: "GIỚI THIỆU" },
+  { label: "DI TÍCH" },
+  { label: "TRƯNG BÀY" },
+  { label: "HOẠT ĐỘNG GIÁO DỤC" },
+  { label: "CÁC DỊCH VỤ" },
 ];
 
 function Footer() {
   return (
     <div className="footer-container">
-      <div className="footer-column">
-        <div>
-          <img
-            className="footer-logo"
-            src={
-              "https://dinhdoclap.gov.vn/wp-content/uploads/2017/09/logo.png"
-            }
-            alt="History"
-          />
-        </div>
+      <div className="footer-column footer-column-1">
+        <img
+          className="footer-logo"
+          src={"https://dinhdoclap.gov.vn/wp-content/uploads/2017/09/logo.png"}
+          alt="History"
+        />
         <div className="footer-address">
           135 Nam Kỳ Khởi Nghĩa, quận 1, TP.HCM
         </div>
         <div className="footer-address">106 Nguyễn Du, quận 1, TP.HCM</div>
-        <div>Điện thoại: 080. 85037 - 028.38223652</div>
+        <br />
+        <div>Điện thoại: 080.85037 - 028.38223652</div>
         <div>Fax: 080.85008</div>
       </div>
-      <div className="footer-column">
+      <div className="footer-divider1"></div>
+      <div className="footer-column footer-column-2">
         <div className="footer-menu">
           <Menu mode="horizontal" items={items} />
         </div>
+        <div className="footer-divider2"></div>
         <div className="footer-row">
-          <div className="follow-us-column">
-            <div className="follow-us-title">Theo Dõi Chúng Tôi</div>
-            <div className="social-icons">
+          <div className="footer-follow-us-column">
+            <div className="footer-follow-us-title">THEO DÕI CHÚNG TÔI</div>
+            <br />
+            <div className="footer-social-icons">
               <FaFacebook />
               <FaTwitter />
               <FaInstagram />
             </div>
-            <Button className="contact-button">LIÊN HỆ</Button>
+            <br />
+            <br />
+            <Button className="main-button-more">LIÊN HỆ</Button>
           </div>
-          <div className="map-column">
+          <div className="footer-map-column">
             <iframe
               title="Google Map"
               loading="lazy"

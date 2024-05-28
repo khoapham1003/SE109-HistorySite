@@ -21,6 +21,7 @@ import ActivityPage from "../../pages/ActivityPage";
 import ActivityDetailPage from "../../pages/ActivityDetail";
 import NewsDetailPage from "../../pages/NewsDetail";
 import NewsPage from "../../pages/NewsPage";
+import Page3D from "../../pages/3DPage";
 
 function AppRoutes() {
   return (
@@ -178,6 +179,7 @@ function AppRoutes() {
             </DefaultLayout>
           }
         />
+        <Route path="/3D" element={<Page3D />} />
       </Routes>
     </BrowserRouter>
   );
