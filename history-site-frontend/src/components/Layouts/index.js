@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { useLocation } from "react-router-dom";
+
 function DefaultLayout({ children }) {
   const location = useLocation();
   useEffect(() => {
