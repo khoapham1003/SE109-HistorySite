@@ -1,6 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-import { Button } from "antd";
+import { Link, useNavigate } from "react-router-dom";
+import { List, Button } from "antd";
+import { News } from "../../components/data";
+import LatestPost from "../../components/LastestPost";
 
 function MapPage() {
   const navigate = useNavigate();
@@ -15,14 +17,34 @@ function MapPage() {
         <div className="infor-big-title">
           <h1>Bản đồ di tích</h1>
         </div>
-        <div className="infor-info-container">
-          <div className="infor-map">
-            <img
-              class="aligncenter size-full wp-image-5958 lazyloaded"
-              src="https://dinhdoclap.gov.vn/wp-content/uploads/2023/08/Map-1.jpg"
-              alt=""
-              width="600"
+        <div className="infor-info-divide">
+          <div className="infor-list">
+            <span>BÀI VIẾT LIÊN QUAN</span>
+            <List
+              dataSource={News}
+              renderItem={(item, index) => (
+                <List.Item key={index}>
+                  <List.Item.Meta
+                    title={<Link to={`/TinTuc/${item.id}`}>{item.title}</Link>}
+                  />
+                </List.Item>
+              )}
             />
+            <br />
+            <br />
+            <div>
+              <LatestPost />
+            </div>
+          </div>
+          <div className="infor-info-container">
+            <div className="infor-map">
+              <img
+                class="aligncenter size-full wp-image-5958 lazyloaded"
+                src="https://dinhdoclap.gov.vn/wp-content/uploads/2023/08/Map-1.jpg"
+                alt=""
+                width="800"
+              />
+            </div>
           </div>
         </div>
       </div>

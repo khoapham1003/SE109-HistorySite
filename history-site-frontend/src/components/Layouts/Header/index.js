@@ -24,10 +24,6 @@ const items = [
         label: "Tin tức",
         key: "4",
       },
-      {
-        label: "Tin tức",
-        key: 4,
-      },
     ],
   },
   {
@@ -70,11 +66,11 @@ const items = [
       // },
       {
         label: "Chuyên đề khác",
-        key: 14,
+        key: "14",
       },
       {
-        label: "Ngiên cứu và sưu tầm",
-        key: 15,
+        label: "Nghiên cứu và sưu tầm",
+        key: "15",
       },
     ],
   },
@@ -90,19 +86,11 @@ const items = [
         label: "Các hoạt động",
         key: "18",
       },
-        {
-          label: "Các hoạt động",
-          key: 18,
-        },
       {
         label: "Câu hỏi thường gặp",
         key: "19",
       },
     ],
-  },
-  {
-    label: "CÁC DỊCH VỤ",
-    key: "20",
   },
 ];
 
@@ -163,9 +151,9 @@ function Header() {
       case "17":
         navigate("/ChuongTrinhKhamPha");
         break;
-        case "18":
-          navigate("/CacHoatDong");
-          break;
+      case "18":
+        navigate("/CacHoatDong");
+        break;
       case "19":
         navigate("/FAQ");
         break;

@@ -1,6 +1,5 @@
 import { Button, Carousel } from "antd";
 import React, { useRef } from "react";
-import "./index.css";
 import { useNavigate } from "react-router-dom";
 
 const contentStyle = {
