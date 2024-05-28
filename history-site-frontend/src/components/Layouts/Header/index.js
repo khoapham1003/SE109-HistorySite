@@ -19,10 +19,10 @@ const items = [
         label: "Hội trường thống nhất",
         key: 3,
       },
-      // {
-      //   label: "Tin tức",
-      //   key: 4,
-      // },
+      {
+        label: "Tin tức",
+        key: 4,
+      },
     ],
   },
   {
@@ -63,14 +63,14 @@ const items = [
       //   label: "Từ Dinh Norodom đến Dinh Độc Lập 1868 - 1966",
       //   key: 13,
       // },
-      // {
-      //   label: "Chuyên đề khác",
-      //   key: 14,
-      // },
-      // {
-      //   label: "Ngiên cứu và sưu tầm",
-      //   key: 15,
-      // },
+      {
+        label: "Chuyên đề khác",
+        key: 14,
+      },
+      {
+        label: "Ngiên cứu và sưu tầm",
+        key: 15,
+      },
     ],
   },
   {
@@ -81,10 +81,10 @@ const items = [
         label: "Chương trình Khám phá Di sản",
         key: 17,
       },
-      // {
-      //   label: "Các hoạt động",
-      //   key: 18,
-      // },
+        {
+          label: "Các hoạt động",
+          key: 18,
+        },
       {
         label: "Câu hỏi thường gặp",
         key: 19,
@@ -122,6 +122,9 @@ function Header() {
       case "3":
         navigate("/ThongTinChung");
         break;
+      case "4":
+        navigate("/TinTuc");
+        break;
       case "6":
         navigate("/LichSuDiTich");
         break;
@@ -140,10 +143,19 @@ function Header() {
       case "11":
         navigate("/TourGuide");
         break;
+      case "14":
+        navigate("/ChuyenDeKhac");
+        break;
+      case "15":
+        navigate("/NghienCuuSuuTam");
+        break;
       case "17":
         navigate("/ChuongTrinhKhamPha");
         break;
-        case "19":
+        case "18":
+          navigate("/CacHoatDong");
+          break;
+      case "19":
         navigate("/FAQ");
         break;
       default:
