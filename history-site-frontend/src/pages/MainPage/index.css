@@ -1,75 +1,263 @@
-.content {
-    background-image: url("https://dinhdoclap.gov.vn/wp-content/uploads/2023/11/cover-web-4.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 400px;
-    margin-bottom: 20px;
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ececec;
+  font-family: "Roboto Condensed", monospace;
+}
+
+img {
+  transition: border 0.3s;
+  border: 4px solid transparent;
+  border-radius: 8px;
+}
+img:hover {
+  border: 4px solid #c1a559;
+}
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+a:hover {
+  color: #0a53c8;
+  text-decoration: underline;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  to {
+    opacity: 1;
   }
-  
-  .description {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  .button-more {
-    background-color: #1890ff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .button-more:hover {
-    background-color: #40a9ff;
-  }
-  
-  .carousel-container {
-    position: relative;
-  }
-  
-  .carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .carousel-btn:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .carousel-btn-prev {
-    left: 20px;
-  }
-  
-  .carousel-btn-next {
-    right: 20px;
-  }
-  
-  .carousel-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 300px;
-  }
-  
-  .carousel-content img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
+}
+
+/* Main Page --------------------------------------------------*/
+
+/* Background and Main Content */
+
+/* Background Image */
+.main-background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://dinhdoclap.gov.vn/wp-content/uploads/2017/10/IMG_84561-1.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Main Page */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+/* Section 1 */
+.main-section1,
+.main-section2,
+.main-section3 {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.main-section1 {
+  background-image: url("https://dinhdoclap.gov.vn/wp-content/uploads/2023/11/cover-web-4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 70px;
+  height: 400px;
+}
+
+/* Section 2 */
+.main-section2 {
+  flex: 1;
+  background-color: #ececec;
+}
+
+.main-info-container {
+  display: flex;
+  justify-content: center;
+  padding: 70px 200px 20px;
+  gap: 40px;
+}
+
+.main-part {
+  float: left;
+  width: 400px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.main-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.main-description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  color: #323232;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.main-button-more {
+  background-color: #c1a559;
+  color: #fff;
+  border: none;
+  width: fit-content;
+  height: 50px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.main-button-more:hover {
+  background-color: #1a3b56 !important;
+  color: white !important;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Section 3 */
+.main-section3 {
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.main-vr-image {
+  width: 400px;
+}
+
+.main-big-title {
+  font-size: 32px;
+  padding-top: 80px;
+}
+
+.main-little-title {
+  color: #fff;
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  text-align: justify;
+  text-align-last: center;
+}
+
+/* Carousel */
+.main-carousel-container {
+  position: relative;
+  width: 400px;
+}
+
+.main-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 50px;
+  height: 100%;
+  font-size: 20px;
+}
+
+.main-carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  color: white !important;
+}
+
+.main-carousel-btn-prev {
+  left: 0px;
+}
+
+.main-carousel-btn-next {
+  right: 0px;
+}
+
+.main-carousel-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.main-carousel-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Information Page --------------------------------------------------*/
+
+.infor-content {
+  background-color: #ececec;
+  z-index: -4;
+  padding: 0px 0px 10px;
+  text-align: justify;
+}
+.infor-big-title {
+  height: 150px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+.infor-big-title h1 {
+  font-size: 40px;
+  margin: 0;
+}
+.infor-info-container {
+  margin: 50px 400px;
+  background-color: white;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+.infor-little-title {
+  margin-top: 10px;
+  font-size: larger;
+  font-weight: 700;
+}
+.infor-img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.infor-map {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.infor-faq span strong {
+  font-size: 25px;
+}
