@@ -1,60 +1,114 @@
 .footer-container {
-  background-color: #023E73; /* Màu nền xanh biển đậm */
-  color: #fff; /* Màu chữ trắng */
-  padding: 40px; /* Khoảng cách nội dung từ mép của footer */
-  display: flex; /* Hiển thị các thành phần theo kiểu flex */
+  background-color: #1a3b56;
+  color: #fff;
+  padding-top: 30px;
+  display: flex;
+  width: 100%;
+  z-index: 0;
 }
 
 .footer-column {
-  flex: 1; /* Cột co giãn */
-  display: flex; /* Hiển thị các thành phần bên trong theo kiểu flex */
-  flex-direction: column; /* Xếp các thành phần bên trong theo chiều dọc */
+  display: flex;
+  flex-direction: column;
 }
 
+.footer-divider1 {
+  height: inherit;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 10px;
+}
+
+.footer-column-1 {
+  flex: 1;
+  flex-basis: 33.33%;
+  margin-left: 70px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+
+.footer-column-2 {
+  flex: 2;
+  flex-basis: 66.66%;
+  margin-left: 70px;
+  margin-right: 50px;
+}
+
+.footer-divider2 {
+  width: inherit;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 10px;
+}
+/* Column 1 */
+.footer-logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
 .footer-address {
-  margin-bottom: 10px; /* Khoảng cách dưới của địa chỉ */
+  margin-bottom: 10px;
 }
 
 .footer-menu {
-  margin-bottom: 20px; /* Khoảng cách dưới của menu */
+  margin-bottom: 10px;
 }
+
+.footer-menu ul {
+  background-color: #1a3b56 !important;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-menu li {
+  color: white !important;
+  padding: 10px 15px;
+  font-weight: 700 !important;
+  cursor: pointer;
+  line-height: 20px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-menu li:hover {
+  background-color: #c1a559 !important;
+  color: #1a3b56 !important;
+}
+
+/* Column 2 */
 
 .footer-row {
-  display: flex; /* Hiển thị các thành phần trong hàng theo kiểu flex */
-  margin-bottom: 20px; /* Khoảng cách dưới của hàng */
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-.follow-us-column {
-  flex-grow: 0; /* Không co giãn */
-  flex-shrink: 0; /* Không co thu nhỏ */
-  flex-basis: 300px; /* Độ rộng cố định */
-  margin-right: 20px; /* Khoảng cách bên phải */
+.footer-follow-us-column {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 300px;
+  margin-right: 20px;
 }
 
-.follow-us-title {
-  margin-bottom: 10px; /* Khoảng cách dưới của tiêu đề */
+.footer-follow-us-title {
+  margin-bottom: 10px;
+  font-weight: 700;
 }
 
-.social-icons {
-  display: flex; /* Hiển thị các biểu tượng mạng xã hội theo hàng ngang */
+.footer-social-icons {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
 }
 
-.social-icons svg {
-  margin-right: 10px; /* Khoảng cách giữa các biểu tượng */
+.footer-social-icons svg {
+  margin-right: 10px;
 }
 
-.map-column {
-  flex: 1; /* Cột co giãn */
+.footer-map-column {
+  flex: 1;
 }
 
-.contact-button {
-  background-color: transparent; /* Nút liên hệ có nền trong suốt */
-  border: 2px solid #fff; /* Viền nút liên hệ */
-  color: #fff; /* Màu chữ của nút liên hệ */
-  margin-bottom: 20px; /* Khoảng cách dưới của nút liên hệ */
-}
-
-iframe {
-  width: 100%; /* Bản đồ có chiều rộng 100% */
-  height: 300px; /* Chiều cao của bản đồ */
+.footer-map-column iframe {
+  width: 100%;
+  height: 200px;
 }

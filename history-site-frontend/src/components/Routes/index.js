@@ -13,6 +13,7 @@ import VisitTimePage from "../../pages/VisitTimePage";
 import TourGuidePage from "../../pages/TourGuidePage";
 import ProgramPage from "../../pages/ProgramPage";
 import FAQPage from "../../pages/FAQPage";
+import Page3D from "../../pages/3DPage";
 
 function AppRoutes() {
   return (
@@ -106,6 +107,7 @@ function AppRoutes() {
             </DefaultLayout>
           }
         />
+        <Route path="/3D" element={<Page3D />} />
       </Routes>
     </BrowserRouter>
   );
