@@ -58,18 +58,21 @@
   margin: 0;
   display: flex;
   gap: 10px;
+  color: white !important;
 }
 
 .footer-menu li {
   color: white !important;
   padding: 10px 15px;
-  font-weight: 700 !important;
+  font-weight: 00 !important;
   cursor: pointer;
   line-height: 20px;
   transition: background-color 0.3s, color 0.3s;
 }
-
-.footer-menu li:hover {
+.footer-menu .ant-menu-title-content {
+  color: white !important;
+}
+.footer-menu .footer-menu li:hover {
   background-color: #c1a559 !important;
   color: #1a3b56 !important;
 }
