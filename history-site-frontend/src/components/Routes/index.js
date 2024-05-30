@@ -22,6 +22,7 @@ import ActivityDetailPage from "../../pages/ActivityDetail";
 import NewsDetailPage from "../../pages/NewsDetail";
 import NewsPage from "../../pages/NewsPage";
 import Page3D from "../../pages/3DPage";
+import ContactPage from "../../pages/ContactPage";
 
 function AppRoutes() {
   return (
@@ -176,6 +177,14 @@ function AppRoutes() {
           element={
             <DefaultLayout>
               <NewsDetailPage />
+            </DefaultLayout>
+          }
+        />
+        <Route
+          path="/LienHe"
+          element={
+            <DefaultLayout>
+              <ContactPage />
             </DefaultLayout>
           }
         />
